@@ -1,0 +1,101 @@
+#MainContainer {
+  display: flex;
+  justify-content: space-between;
+}
+#LeftDiv {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 68.5%;
+}
+#NewsDiv {
+  flex-basis: 27.5%;
+}
+#NewsWrapper {
+  margin: 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.NewsCard:not(#FinalCard) {
+  border-bottom: 1px solid darkgrey;
+}
+#NewsWrapper p {
+  color: grey;
+}
+
+.NewsCard h1 {
+  font-size: 154%;
+}
+
+.NewsCard h1:hover {
+  cursor: pointer;
+  color: hsl(35, 77%, 62%);;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+
+#NewsHeader {
+  font-size: 2.5vw;
+  color: hsl(35, 77%, 62%);
+}
+#ParaphrapheWrapper {
+  flex-basis: 50%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+#ReadMoreBtn {
+  width: 50%;
+  height: 27%;
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  color: white;
+  letter-spacing: 9px;
+}
+
+#ReadMoreBtn:hover{
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  background-color: hsl(240, 100%, 5%);
+}
+#InfoDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+#NewsDiv {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: hsl(240, 100%, 5%);
+}
+
+#GameImg {
+  width: 100%;
+  height: 65%;
+}
+
+@media (max-width: 600px) {
+  #MainContainer {
+    flex-direction: column;    
+    row-gap: 7vh;
+
+  }
+  #NewsDiv {
+    flex-basis: 90%;
+  }
+  #InfoDiv{
+    flex-direction: column;
+  }
+  #LeftDiv{
+    row-gap: 16px;
+
+  }
+
+  #ReadMoreBtn{
+    height: 12vw;
+  }
+}
