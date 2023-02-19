@@ -1,0 +1,47 @@
+#CardsWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Card{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 30%;
+}
+
+.InnerCard{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+}
+.ProductsImges{
+    width: 27%;
+height: 100%;
+}
+
+.InnerCard h1{
+    margin-top: 1%;
+    font-size: 22px;
+}
+.InnerCard h1:hover{
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
+  }
+.InnerCard p{
+    /* width: 50%; */
+    margin: 0;
+} 
+
+.InnerCard label{
+    color: #b3b1b1;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+@media (max-width:600px) {
+    #CardsWrapper{
+      flex-direction: column;
+      row-gap: 3vh;
+    }
+  }
