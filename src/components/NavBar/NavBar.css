@@ -1,0 +1,135 @@
+.header {
+  background-color: hsl(36, 100%, 99%);
+  z-index: 100;
+  width: 100%;
+  color: white;
+}
+#BurgerIconImg {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 1.9rem;
+  cursor: pointer;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navBar h1 {
+  padding-left: 1%;
+}
+.UnOrderLists {
+  list-style: none;
+}
+
+.UnOrderLists li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.UnOrderLists li :hover {
+  border-radius: 40px;
+  background-color: white;
+  color: hsl(35, 77%, 62%);;
+}
+
+.UnOrderLists li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: black;
+}
+
+#CloseBtn{
+  display: none;
+}
+
+/* .UnOrderLists li a :hover {
+    color: aqua;
+  } */
+
+@media (max-width: 501px) {
+  #BurgerIconImg {
+    display: block;
+  }
+
+  .navBar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .UnOrderLists {
+    display: none;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .active {
+    display: flex;
+  }
+
+  .UnOrderLists li {
+    /* display: none; */
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+  }
+  .UnOrderLists li a {
+    color: grey;
+    text-align: left;
+  }
+
+  .UnOrderLists a {
+    display: block;
+    width: 100%;
+  }
+
+  .UnOrderLists li :hover {
+    border-radius: 40px;
+    background-color: hsl(51, 100%, 49%);
+    color: black;
+  }
+
+  #SideBar{
+    
+    height: 102vh;
+    width: 65%;
+    position: absolute;
+    z-index: 100;
+    right: 0%;
+    top: 0px;
+    bottom: 0px;
+    background-color: white;
+  }
+
+  .active {
+    display: flex;
+  }
+
+  .Nonactive {
+    display: none;
+  }
+  #CloseBtn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+    display: block;
+    right: 20px;
+    top: 20px;
+    z-index: 200;
+
+  }
+  
+}
