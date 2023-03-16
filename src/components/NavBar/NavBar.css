@@ -2,7 +2,12 @@
   background-color: hsl(36, 100%, 99%);
   z-index: 100;
   width: 100%;
+  height: 40px;
   color: white;
+  margin-bottom:55px
+}
+#LogoImg{
+  height: 100%;
 }
 #BurgerIconImg {
   display: none;
@@ -13,10 +18,12 @@
 }
 
 .navBar {
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .navBar h1 {
   padding-left: 1%;
 }
@@ -25,8 +32,31 @@
 }
 
 .UnOrderLists li {
+  
   display: inline-block;
   padding: 0 20px;
+  font-family: 'Inter-Regular';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 26px;
+}
+.NavBarAnchors{
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: #5E607A;
+}
+#SideBar{
+  height: 100%;
+}
+.UnOrderLists {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .UnOrderLists li :hover {
@@ -35,21 +65,10 @@
   color: hsl(35, 77%, 62%);;
 }
 
-.UnOrderLists li a {
-  transition: all 0.3s ease 0s;
-  text-decoration: none;
-  padding: 1rem;
-  box-sizing: border-box;
-  color: black;
-}
 
 #CloseBtn{
   display: none;
 }
-
-/* .UnOrderLists li a :hover {
-    color: aqua;
-  } */
 
 @media (max-width: 501px) {
   #BurgerIconImg {

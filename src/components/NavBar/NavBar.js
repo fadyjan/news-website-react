@@ -25,19 +25,19 @@ const NavBar = () => {
 
         <ul className="UnOrderLists Nonactive">
           <li>
-            <a href="#">Home</a>
+            <a href="#" className="NavBarAnchors">Home</a>
           </li>
           <li>
-            <a href="#">New</a>
+            <a href="#" className="NavBarAnchors">New</a>
           </li>
           <li>
-            <a href="#">Popular</a>
+            <a href="#" className="NavBarAnchors">Popular</a>
           </li>
           <li>
-            <a href="#">Trending</a>
+            <a href="#" className="NavBarAnchors">Trending</a>
           </li>
           <li>
-            <a href="#">Categories</a>
+            <a href="#" className="NavBarAnchors">Categories</a>
           </li>
         </ul>
         </div>

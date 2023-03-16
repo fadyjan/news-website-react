@@ -1,31 +1,46 @@
 #MainContainer {
+  height: 511px;
   display: flex;
   justify-content: space-between;
 }
 #LeftDiv {
   display: flex;
   flex-direction: column;
-  flex-basis: 68.5%;
+  justify-content: space-between;
+  width: 730px;
+  height: 100%;
 }
 #NewsDiv {
-  flex-basis: 27.5%;
+  width: 350px;
+  height: 100%
 }
 #NewsWrapper {
-  margin: 7%;
+  margin: 25px 24px 31px 24px;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-grow: 1;
+  
 }
 .NewsCard:not(#FinalCard) {
   border-bottom: 1px solid darkgrey;
 }
 #NewsWrapper p {
-  color: grey;
+  font-family: 'Inter-Regular';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 26px;
+color: #C5C6CE;
 }
 
 .NewsCard h1 {
-  font-size: 154%;
+  font-family: 'Inter-ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFDFA;
 }
 
 .NewsCard h1:hover {
@@ -38,22 +53,64 @@
 
 
 #NewsHeader {
-  font-size: 2.5vw;
-  color: hsl(35, 77%, 62%);
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #E9AA52;
 }
 #ParaphrapheWrapper {
   flex-basis: 50%;
   flex-direction: column;
   display: flex;
   justify-content: space-between;
+
+  font-family: 'Inter-Regular';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 26px;
+/* or 173% */
+
+
+/* Gunmetal */
+
+color: #5E607A;
 }
+#SubHeader{
+
+font-family: 'Inter-ExtraBold';
+font-style: normal;
+font-weight: 800;
+font-size: 56px;
+line-height: 56px;
+/* or 100% */
+
+display: flex;
+align-items: center;
+
+/* Dark Space Blue */
+
+color: #00001A;}
 #ReadMoreBtn {
   width: 50%;
   height: 27%;
   background-color: hsl(5, 85%, 63%);
   border: none;
-  color: white;
-  letter-spacing: 9px;
+  font-family: 'Inter-Bold';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+letter-spacing: 4.375px;
+
+/* Almost White */
+
+color: #FFFDFA;
+
 }
 
 #ReadMoreBtn:hover{
@@ -64,6 +121,9 @@
 #InfoDiv {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+    height: 182px;
+
 }
 
 #NewsDiv {
@@ -75,25 +135,40 @@
 
 #GameImg {
   width: 100%;
-  height: 65%;
+  height: 58%;
 }
 
 @media (max-width: 600px) {
   #MainContainer {
-    flex-direction: column;    
-    row-gap: 7vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 64px;
+    height: fit-content;
 
   }
+  #LeftDiv{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+    justify-content: unset;
+    row-gap: 10px;
+  }
+  #GameImg {
+    width: 100%;
+    height: 300px;
+}
   #NewsDiv {
-    flex-basis: 90%;
+    width: 100%;
+    height: 489px;
   }
   #InfoDiv{
     flex-direction: column;
+    width: 100%;
+    height: unset;
   }
-  #LeftDiv{
-    row-gap: 16px;
 
-  }
 
   #ReadMoreBtn{
     height: 12vw;

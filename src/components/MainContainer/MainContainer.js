@@ -3,7 +3,7 @@ import "./MainContainer.css";
 import GameImgDesktop from "../../Assets/image-web-3-desktop.jpg";
 import GameImgMobile from "../../Assets/image-web-3-mobile.jpg"
 function MainContainer() {
-  const [ stateImage, setStateImage ] =useState(true);
+  const [ stateImage, setStateImage ] =useState(window.innerWidth);
   useEffect(() => {
     const handleWindowResize = () => {
       if (window.innerWidth >600) {
@@ -18,13 +18,13 @@ function MainContainer() {
     return () => {
       window.removeEventListener('resize', handleWindowResize);
     };
-  });
+  },[window.innerWidth]);
   return (
     <div id="MainContainer" lang="Main">
       <div id="LeftDiv">
         <img alt="" src={stateImage ? GameImgDesktop : GameImgMobile} id="GameImg"></img>
         <div id="InfoDiv">
-          <h1 style={{ fontSize: "54px", margin: "0px" }}>
+          <h1 id="SubHeader">
             The Bright<br></br> Future of <br></br>web 3.0 ?
           </h1>
           <div id="ParaphrapheWrapper">

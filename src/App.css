@@ -1,21 +1,26 @@
-@import url('https://fonts.google.com/specimen/Inter');
 
+#root{
+  width: 77%;
+  height: 78%;
+}
 
 .App {
-  font-family: "Inter";
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  row-gap: 5vh;
-}
-body {
-padding :2% 16%;
-background-color: hsl(36, 100%, 99%);
 }
 
 @media (max-width:600px) {
   body{
-    padding :2% 4%;
+    width: 100%;
 
+  }
+  #root{
+    width: 93%;
+    height: 1872px;
+    position: absolute;
+    top: 15px;
+  }
+  .App {
+    height: 100%;
   }
 }
