@@ -14,7 +14,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
-    - [React component structure](#React Component Structure)
+    - [React component structure](#React-component-structure)
 
 ## Overview
 
@@ -27,9 +27,9 @@ Users should be able to:
 
 ### Screenshot
 ##### Desktop
-![desktop-design](/Design/desktop-design.jpg)
+![desktop-design](./src/Design/desktop-design.jpg)
 ##### Mobile
-![mobile-design](/Design/mobile-design.jpg)
+![mobile-design](./src/Design/mobile-design.jpg)
 
 
 ### Links
@@ -50,7 +50,8 @@ Users should be able to:
 - Vercel for Deployment
 - Google fonts
 
-## React Component Structure
+### React component structure
+
 - index.js
     - src/App.js
         - NavBar
