@@ -44,6 +44,7 @@ Users should be able to:
 - React
 - JavaScript
 - HTML
+- SCSS
 - CSS
 - Flexbox
 - Figma
