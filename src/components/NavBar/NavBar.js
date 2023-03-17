@@ -1,5 +1,5 @@
 import React from "react";
-import "./NavBar.css";
+import "./NavBar.scss";
 import BurgerIcons from "../../Assets/icon-menu.svg";
 import CloseBtn from "../../Assets/icon-menu-close.svg"
 import Logo from "../../Assets/logo.svg";

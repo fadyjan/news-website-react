@@ -1,12 +1,13 @@
+@use "../../index.scss" as MainModule;
 .header {
   background-color: hsl(36, 100%, 99%);
   z-index: 100;
   width: 100%;
   height: 40px;
   color: white;
-  margin-bottom:55px
+  margin-bottom: 55px;
 }
-#LogoImg{
+#LogoImg {
   height: 100%;
 }
 #BurgerIconImg {
@@ -32,23 +33,22 @@
 }
 
 .UnOrderLists li {
-  
   display: inline-block;
   padding: 0 20px;
-  font-family: 'Inter-Regular';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 26px;
+  font-family: MainModule.$Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
 }
-.NavBarAnchors{
+.NavBarAnchors {
   transition: all 0.3s ease 0s;
   text-decoration: none;
   padding: 1rem;
   box-sizing: border-box;
-  color: #5E607A;
+  color: #5e607a;
 }
-#SideBar{
+#SideBar {
   height: 100%;
 }
 .UnOrderLists {
@@ -62,11 +62,10 @@ line-height: 26px;
 .UnOrderLists li :hover {
   border-radius: 40px;
   background-color: white;
-  color: hsl(35, 77%, 62%);;
+  color: hsl(35, 77%, 62%);
 }
 
-
-#CloseBtn{
+#CloseBtn {
   display: none;
 }
 
@@ -85,7 +84,6 @@ line-height: 26px;
     background-color: white;
     height: 100%;
     width: 100%;
-
     flex-direction: column;
     justify-content: center;
     padding-left: 0px;
@@ -93,35 +91,33 @@ line-height: 26px;
     position: absolute;
     top: 0;
     right: 0;
+    li {
+      /* display: none; */
+      width: 100%;
+      text-align: center;
+      padding: 0px;
+    }
+    a {
+      display: block;
+      width: 100%;
+    }
+    li :hover {
+      border-radius: 40px;
+      background-color: hsl(51, 100%, 49%);
+      color: black;
+    }
   }
   .active {
     display: flex;
   }
 
-  .UnOrderLists li {
-    /* display: none; */
-    width: 100%;
-    text-align: center;
-    padding: 0px;
-  }
-  .UnOrderLists li a {
+  .UnOrderLists .UnOrderLists li a {
     color: grey;
     text-align: left;
   }
 
-  .UnOrderLists a {
-    display: block;
-    width: 100%;
-  }
 
-  .UnOrderLists li :hover {
-    border-radius: 40px;
-    background-color: hsl(51, 100%, 49%);
-    color: black;
-  }
-
-  #SideBar{
-    
+  #SideBar {
     height: 102vh;
     width: 65%;
     position: absolute;
@@ -139,7 +135,7 @@ line-height: 26px;
   .Nonactive {
     display: none;
   }
-  #CloseBtn{
+  #CloseBtn {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -148,7 +144,5 @@ line-height: 26px;
     right: 20px;
     top: 20px;
     z-index: 200;
-
   }
-  
 }

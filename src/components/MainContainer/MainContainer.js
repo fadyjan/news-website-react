@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from "react";
-import "./MainContainer.css";
+import "./MainContainer.scss";
 import GameImgDesktop from "../../Assets/image-web-3-desktop.jpg";
 import GameImgMobile from "../../Assets/image-web-3-mobile.jpg"
 function MainContainer() {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Products.css";
+import "./Products.scss";
 import ProductOne from "../../Assets/image-retro-pcs.jpg";
 import ProductTwo from "../../Assets/image-top-laptops.jpg";
 import ProductThree from "../../Assets/image-gaming-growth.jpg";
